@@ -65,3 +65,102 @@ $(document).ajaxStop(function() {
     NProgress.done();
   }, 500)
 });
+
+
+
+
+//2.公共功能
+$(function(){
+//左右二级菜单切换
+  $(".lt_aside .category").click(function(){
+    $(".lt_aside .child").stop().slideToggle();
+  });
+
+//左边菜单栏隐藏部分
+
+$(".lt_topbar .icon_menu").click(function(){
+  $('.lt_topbar').toggleClass("hidemenu");
+  $('.lt_aside').toggleClass("hidemenu");
+  $('.lt_main').toggleClass("hidemenu");
+})
+
+
+  //模态框
+
+  // 3. 点击头部退出按钮, 显示退出模态框
+  $('.lt_topbar .icon_logout').click(function() {
+    // 显示模态框
+    $('#logoutModal').modal("show");
+  });
+
+  // 4. 点击模态框中的退出按钮, 需要进行退出操作(ajax)
+  $('#logoutBtn').click(function() {
+
+    // 发送ajax请求进行退出操作, 让后台销毁当前用户的登陆状态
+    $.ajax({
+      type: "get",
+      url: "/employee/employeeLogout",
+      dataType: "json",
+      success: function( info ) {
+        console.log( info );
+        if ( info.success ) {
+          // 跳转到登录页面
+          location.href = "login.html";
+        }
+      }
+    })
+
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
