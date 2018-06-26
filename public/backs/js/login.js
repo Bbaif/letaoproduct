@@ -89,7 +89,7 @@ $("#form").on("success.form.bv",function(e){
     data:$("#form").serialize(),
     dataType:"json",
     success:function(info) {
-      console.log(info);
+      //console.log(info);
 
       if(info.success){
         //登录成功,跳转到首页

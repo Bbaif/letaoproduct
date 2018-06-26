@@ -95,7 +95,7 @@ ul{
   border-left: 3px solid transparent;
 }
 
-.lt_aside .nav a .current{
+.lt_aside .nav a.current{
   background-color: #1D1F21;
   border-left: 3px solid #006699;
 }
@@ -165,8 +165,15 @@ ul{
 
 
 
+/*  user中的 */
 
-
+/* 让所有的 th 和 td 都水平垂直居中 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  /* 注意: 表格内容垂直居中 */
+  vertical-align: middle;
+}
 
 
 
