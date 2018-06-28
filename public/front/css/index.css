@@ -1,0 +1,71 @@
+.lt_nav{
+  padding: 10px;
+}
+
+.lt_nav li{
+  float: left;
+  width: 33%;
+}
+.lt_nav li a{
+  display: block;
+}
+
+
+.lt_product{
+  padding: 10px;
+  text-align: center;
+}
+
+.lt_product li:nth-child(odd){
+  margin-right: 4%;
+}
+.lt_product li{
+  width: 48%;
+  float: left;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.lt_product li a{
+  display: block;
+  padding: 10px;
+}
+
+.lt_product li a .price{
+  color: red;
+}
+
+.lt_product li a .oldprice{
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
