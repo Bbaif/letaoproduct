@@ -10,7 +10,7 @@ $(function(){
     url:"/category/queryTopCategory",
     dataType:"json",
     success:function(info){
-      console.log(info);
+      //console.log(info);
       var htmlStr = template("tpl",info);
       $(".lt_category_left ul").html(htmlStr);
       // 应该根据第一个一级分类的 id, 进行渲染二级分类
@@ -44,7 +44,7 @@ $(function(){
       },
       dataType:"json",
       success:function(info){
-        console.log(info);
+        //console.log(info);
         var htmlStr = template("rightTpl",info);
         $(".lt_category_right ul").html(htmlStr)
       }
