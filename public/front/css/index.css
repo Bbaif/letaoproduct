@@ -25,6 +25,7 @@
   border: 1px solid #ccc;
   margin-bottom: 10px;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .lt_product li a{
